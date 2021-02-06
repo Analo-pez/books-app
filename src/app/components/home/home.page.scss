@@ -1,0 +1,15 @@
+#container {
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // // top: 50%;
+    // transform: translateY(-50%);
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

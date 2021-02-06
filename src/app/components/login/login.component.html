@@ -1,0 +1,13 @@
+<div class="loginPage">
+    <ion-form class="loginPage__form">
+        <ion-item class="loginPage__form--item">
+            <ion-label position="fixed" [(ngModel)]="nameItem">Username</ion-label>
+            <ion-input type='text'></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="fixed" [(ngModel)]="passItem">Password</ion-label>
+            <ion-input type='current-password'></ion-input>
+        </ion-item>
+        <ion-button color="medium" (click)="loginUser()" href='/home'>Enter</ion-button>
+    </ion-form>
+</div>

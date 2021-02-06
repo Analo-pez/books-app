@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title> Home </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fulscreen]="true" id="container">
+    <div class="result">
+        <ion-card href="detail">
+            <h4>{{allBooks[0].title}}</h4>
+            <p>{{allBooks[0].body}}</p>
+        </ion-card>
+        <ion-card>
+            <h4>otro título</h4>
+            <p>con su contenido</p>
+        </ion-card>
+        <ion-card>
+            <h4>otro título</h4>
+            <p>con su contenido</p>
+        </ion-card>
+    </div>
+</ion-content>

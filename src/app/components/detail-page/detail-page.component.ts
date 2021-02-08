@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiBooksService } from '../../services/api-books.service';
 
+
 @Component({
   selector: 'app-detail-page',
   templateUrl: './detail-page.component.html',
@@ -11,6 +12,7 @@ export class DetailPageComponent  {
 
   bookId={};
 
+  content:string;
 
   constructor(private bookService: ApiBooksService,
     private router: ActivatedRoute) { 
@@ -21,8 +23,4 @@ export class DetailPageComponent  {
         })
       })
       
-    }
-
- 
-
-}
+    }}

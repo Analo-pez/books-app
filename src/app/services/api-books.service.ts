@@ -16,9 +16,9 @@ export class ApiBooksService {
     return url;
   }
 
-  // getBookDetail(id: string): any {
-  //   const url = this.http.get(`https://jsonplaceholder.typicode.com/posts=?${id}`);
+  getOneBook(id: number): any {
+    const url = this.http.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
 
-  //   return url;
-  // }
+    return url;
+  }
 }

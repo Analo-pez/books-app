@@ -6,9 +6,8 @@
 
 <ion-content>
     <div class="result">
-        <ion-card *ngFor="let book of allBooks" routerLink="/detail" class="result__card">
+        <ion-card *ngFor="let book of allBooks" [routerLink]="['/detail', book.id]" class="result__card">
             <h5 class="result__card--title">{{book.title}}</h5>
-            <!-- <p class="result__card--title">{{book.body}}</p> -->
         </ion-card>
     </div>
 </ion-content>

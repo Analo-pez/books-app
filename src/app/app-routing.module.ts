@@ -14,13 +14,9 @@ const routes: Routes = [
     component: HomePage
   },
   {
-    path: 'detail',
+    path: 'detail/:id',
     component: DetailPageComponent
   },
-  // {
-  //   path: 'home/:bookId',
-  //   loadChildren: () => import('./components/detail-page/detail-page.module').then(m => m.HomePageModule)
-  // },
   {
     path: '',
     redirectTo: 'login',

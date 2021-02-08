@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Book } from '../../models/book.model';
 import { ApiBooksService } from '../../services/api-books.service';
 
 @Component({
@@ -8,19 +7,22 @@ import { ApiBooksService } from '../../services/api-books.service';
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss'],
 })
-export class DetailPageComponent implements OnInit {
+export class DetailPageComponent  {
 
-  book: Book;
+  bookId={};
 
 
   constructor(private bookService: ApiBooksService,
     private router: ActivatedRoute) { 
-
-
-
+      
+      this.router.params.subscribe(params => {
+        this.bookService.getOneBook(params.id).subscribe(data => {
+          this.bookId = data;
+        })
+      })
       
     }
 
-  ngOnInit() {}
+ 
 
 }

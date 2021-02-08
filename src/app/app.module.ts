@@ -11,12 +11,13 @@ import { CommonModule } from '@angular/common';
 import { HomePage } from './components/home/home.page';
 import { LoginComponent } from './components/login/login.component';
 import { DetailPageComponent } from './components/detail-page/detail-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, HomePage, DetailPageComponent],
   entryComponents: [],
-  imports: [CommonModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule,  HttpClientModule],
+  imports: [CommonModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule,  HttpClientModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

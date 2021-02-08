@@ -8,7 +8,7 @@ import { ApiBooksService } from '../../services/api-books.service';
 })
 export class HomePage {
 
-  allBooks: Array<object>;
+  allBooks;
 
  constructor(private dataService: ApiBooksService) {
 

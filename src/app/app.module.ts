@@ -8,10 +8,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { HomePage } from './components/home/home.page';
+import { LoginComponent } from './components/login/login.component';
+import { DetailPageComponent } from './components/detail-page/detail-page.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoginComponent, HomePage, DetailPageComponent],
   entryComponents: [],
   imports: [CommonModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule,  HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
